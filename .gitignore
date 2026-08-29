@@ -1,0 +1,35 @@
+﻿## --- KOMPAJLIRANI KOD I BINARNI FAJLOVI ---
+# Ignoriše foldere gde Visual Studio pakuje gotove aplikacije i privremene fajlove kompajlera
+bin/
+obj/
+x64/
+x86/
+[Debug]/
+[Release]/
+
+## --- LOKALNA PODEŠAVANJA RAZVOJNOG OKRUŽENJA (IDE) ---
+# Skriveni folder Visual Studia koji čuva tvoja lična podešavanja i keš okruženja
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+## --- NUGET PAKETI (EKSTERNE BIBLIOTEKE) ---
+# Nema potrebe da čuvaš gigabajte eksternih biblioteka, Git ih skida sam na osnovu projektnog fajla
+packages/
+!packages/repositories.config
+*.nuget.props
+*.nuget.targets
+
+## --- REZULTATI TESTIRANJA I ANALIZE KODA ---
+TestResults/
+*.codecoverage
+*.Artifacts/
+
+## --- OPERATIVNI SISTEMI ---
+# Skriveni fajlovi koje Windows i Mac prave u folderima
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+.DS_Store
